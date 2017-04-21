@@ -1,0 +1,52 @@
+.slider, .main, .main-item{
+	width: 100%;
+	height: 600px;
+	position: relative;
+}
+/*幻灯片区*/
+.main {
+	overflow: hidden;
+}
+/*每个幻灯片*/
+.main-item {
+	opacity: 0;
+	position: absolute;
+	right: 50%;
+	top:0;
+	-webkit-transition:all .5s;
+}
+.main-item_active {
+	right: 0;
+	opacity: 1;
+}
+.main-item img{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.ctrl {
+	width: 100%;
+	height: 13px;
+	line-height: 13px;
+	text-align: center;
+	position: absolute;
+	bottom: 50px;
+}
+.ctrl-item {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	opacity: 0.5;
+	margin: 0 30px;
+	border-radius: 8px;
+	background-color: #666;
+	box-shadow: 0 1px 1px rgba(0,0,0,.3);
+}
+.ctrl-item_active {
+	background-color: #000;
+}
+.ctrl-item:hover {
+	background-color: #F0F0F0;
+}

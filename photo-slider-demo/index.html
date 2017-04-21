@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<meta charset="utf-8">
+
+	<title></title>
+</head>
+<body>
+	<div class="slider">
+
+		<div class="main" id="template_main">
+			<div class="main-item" id="main_{{index}}">
+				<img src="photo/poster{{index}}.jpg">		
+			</div>
+		</div>
+		<div class="ctrl" id="template_ctrl">
+			<a class="ctrl-item" id="ctrl_{{index}}"href="javascript:switchSlider({{index}});"></a>
+		</div>
+
+	</div>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
